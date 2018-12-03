@@ -1,0 +1,11 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.sim/IF_Stage/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/IF_Stage/tb01_IF.v,1531749791,verilog,,,,tb01_IF,,,,,,,,
+E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/ADD.v,1528572305,verilog,,E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/IF.v,,ADD,,,,,,,,
+E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/IF.v,1531518036,verilog,,E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/IM.v,,IF,,,,,,,,
+E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/IM.v,1531747249,verilog,,E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/MUX.v,,IM,,,,,,,,
+E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/MUX.v,1530577259,verilog,,E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/PC.v,,MUX,,,,,,,,
+E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/PC.v,1530920496,verilog,,E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/IF_Stage/tb01_IF.v,,PC,,,,,,,,

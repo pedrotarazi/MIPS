@@ -1,0 +1,36 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../TPFinal.srcs/sources_1/new/ADD.v" \
+"../../../../TPFinal.srcs/sources_1/new/ALU.v" \
+"../../../../TPFinal.srcs/sources_1/new/ALU_Control.v" \
+"../../../../TPFinal.srcs/sources_1/new/Branch.v" \
+"../../../../TPFinal.srcs/sources_1/new/CONTROL.v" \
+"../../../../TPFinal.srcs/sources_1/new/ClockCounter.v" \
+"../../../../TPFinal.srcs/sources_1/new/DM.v" \
+"../../../../TPFinal.srcs/sources_1/new/EX.v" \
+"../../../../TPFinal.srcs/sources_1/new/EX_MEM.v" \
+"../../../../TPFinal.srcs/sources_1/new/FU.v" \
+"../../../../TPFinal.srcs/sources_1/new/FiltroLoad.v" \
+"../../../../TPFinal.srcs/sources_1/new/FiltroStore.v" \
+"../../../../TPFinal.srcs/sources_1/new/HU.v" \
+"../../../../TPFinal.srcs/sources_1/new/ID.v" \
+"../../../../TPFinal.srcs/sources_1/new/ID_EX.v" \
+"../../../../TPFinal.srcs/sources_1/new/IF.v" \
+"../../../../TPFinal.srcs/sources_1/new/IF_ID.v" \
+"../../../../TPFinal.srcs/sources_1/new/IM.v" \
+"../../../../TPFinal.srcs/sources_1/new/MEM.v" \
+"../../../../TPFinal.srcs/sources_1/new/MEM_WB.v" \
+"../../../../TPFinal.srcs/sources_1/new/MUX.v" \
+"../../../../TPFinal.srcs/sources_1/new/MUX3.v" \
+"../../../../TPFinal.srcs/sources_1/new/PC.v" \
+"../../../../TPFinal.srcs/sources_1/new/Pipeline.v" \
+"../../../../TPFinal.srcs/sources_1/new/Regs.v" \
+"../../../../TPFinal.srcs/sources_1/new/SE.v" \
+"../../../../TPFinal.srcs/sources_1/new/WB.v" \
+"../../../../TPFinal.srcs/General/new/tb01_pipeline.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

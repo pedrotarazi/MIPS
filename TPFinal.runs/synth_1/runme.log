@@ -1,0 +1,1200 @@
+
+*** Running vivado
+    with args -log TPF.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TPF.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source TPF.tcl -notrace
+Command: synth_design -top TPF -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12364 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 359.289 ; gain = 100.832
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TPF' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/TPF.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Pipeline' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/Pipeline.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IF' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/IF.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MUX' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/MUX.v:3]
+	Parameter BITS bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX' (1#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/MUX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PC' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/PC.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (2#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/PC.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ADD' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/ADD.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ADD' (3#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/ADD.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IM' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/IM.v:3]
+	Parameter HLT bound to: -67108864 - type: integer 
+	Parameter loading bound to: 0 - type: integer 
+	Parameter execute bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'IM' (4#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/IM.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IF' (5#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/IF.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IF_ID' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/IF_ID.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IF_ID' (6#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/IF_ID.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ID' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/ID.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Regs' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/Regs.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Regs' (7#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/Regs.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SE' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/SE.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'SE' (8#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/SE.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CONTROL' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/CONTROL.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CONTROL' (9#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/CONTROL.v:3]
+INFO: [Synth 8-6157] synthesizing module 'FiltroLoad' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/FiltroLoad.v:3]
+	Parameter LB bound to: 6'b100000 
+	Parameter LH bound to: 6'b100001 
+	Parameter LW bound to: 6'b100011 
+	Parameter LBU bound to: 6'b100100 
+	Parameter LHU bound to: 6'b100101 
+	Parameter LWU bound to: 6'b100111 
+INFO: [Synth 8-6155] done synthesizing module 'FiltroLoad' (10#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/FiltroLoad.v:3]
+WARNING: [Synth 8-3848] Net taken in module/entity ID does not have driver. [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/ID.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'ID' (11#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/ID.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ID_EX' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/ID_EX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ID_EX' (12#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/ID_EX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'EX' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/EX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MUX__parameterized0' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/MUX.v:3]
+	Parameter BITS bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX__parameterized0' (12#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/MUX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MUX3' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/MUX3.v:3]
+	Parameter BITS bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX3' (13#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/MUX3.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/ALU.v:3]
+	Parameter AND bound to: 4'b0000 
+	Parameter OR bound to: 4'b0001 
+	Parameter XOR bound to: 4'b0010 
+	Parameter NOR bound to: 4'b0011 
+	Parameter ADD bound to: 4'b0100 
+	Parameter SUB bound to: 4'b0101 
+	Parameter LUI bound to: 4'b0110 
+	Parameter SLT bound to: 4'b0111 
+	Parameter SLL bound to: 4'b1000 
+	Parameter SRL bound to: 4'b1001 
+	Parameter SRA bound to: 4'b1010 
+	Parameter SLLV bound to: 4'b1011 
+	Parameter SRLV bound to: 4'b1100 
+	Parameter SRAV bound to: 4'b1101 
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (14#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU_Control' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/ALU_Control.v:3]
+	Parameter AND bound to: 4'b0000 
+	Parameter OR bound to: 4'b0001 
+	Parameter XOR bound to: 4'b0010 
+	Parameter NOR bound to: 4'b0011 
+	Parameter ADD bound to: 4'b0100 
+	Parameter SUB bound to: 4'b0101 
+	Parameter LUI bound to: 4'b0110 
+	Parameter SLT bound to: 4'b0111 
+	Parameter SLL bound to: 4'b1000 
+	Parameter SRL bound to: 4'b1001 
+	Parameter SRA bound to: 4'b1010 
+	Parameter SLLV bound to: 4'b1011 
+	Parameter SRLV bound to: 4'b1100 
+	Parameter SRAV bound to: 4'b1101 
+INFO: [Synth 8-6155] done synthesizing module 'ALU_Control' (15#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/ALU_Control.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MUX__parameterized1' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/MUX.v:3]
+	Parameter BITS bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX__parameterized1' (15#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/MUX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Branch' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/Branch.v:3]
+	Parameter BEQ bound to: 6'b000100 
+	Parameter BNE bound to: 6'b000101 
+	Parameter J bound to: 6'b000010 
+	Parameter JAL bound to: 6'b000011 
+	Parameter REG bound to: 6'b000000 
+	Parameter JR bound to: 6'b001000 
+	Parameter JALR bound to: 6'b001001 
+INFO: [Synth 8-6155] done synthesizing module 'Branch' (16#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/Branch.v:3]
+INFO: [Synth 8-6157] synthesizing module 'FiltroStore' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/FiltroStore.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'FiltroStore' (17#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/FiltroStore.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'EX' (18#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/EX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'EX_MEM' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/EX_MEM.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'EX_MEM' (19#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/EX_MEM.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MEM' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/MEM.v:3]
+INFO: [Synth 8-6157] synthesizing module 'DM' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/DM.v:3]
+	Parameter DATA_BITS bound to: 32 - type: integer 
+	Parameter ADDR_BITS bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'DM' (20#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/DM.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MEM' (21#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/MEM.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MEM_WB' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/MEM_WB.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_WB' (22#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/MEM_WB.v:3]
+INFO: [Synth 8-6157] synthesizing module 'WB' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/WB.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'WB' (23#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/WB.v:3]
+INFO: [Synth 8-6157] synthesizing module 'FU' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/FU.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'FU' (24#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/FU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'HU' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/HU.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'HU' (25#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/HU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ClockCounter' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/ClockCounter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ClockCounter' (26#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/ClockCounter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Pipeline' (27#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/Pipeline.v:3]
+INFO: [Synth 8-6157] synthesizing module 'UART' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/UART.v:3]
+INFO: [Synth 8-6157] synthesizing module 'BRG' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/BRG.v:3]
+	Parameter FreqClock bound to: 100000000 - type: integer 
+	Parameter BaudRate bound to: 19200 - type: integer 
+	Parameter Ticks bound to: 16 - type: integer 
+	Parameter max bound to: 325 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BRG' (28#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/BRG.v:3]
+INFO: [Synth 8-6157] synthesizing module 'INTERFACE' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:3]
+	Parameter idle_tx bound to: 3'b000 
+	Parameter start_tx bound to: 3'b001 
+	Parameter transmiting bound to: 3'b010 
+	Parameter waiting bound to: 3'b011 
+	Parameter waiting_for_data bound to: 3'b100 
+	Parameter finish bound to: 3'b101 
+	Parameter HLT bound to: -67108864 - type: integer 
+	Parameter uno bound to: 8'b00110001 
+	Parameter dos bound to: 8'b00110010 
+	Parameter tres bound to: 8'b00110011 
+	Parameter decode bound to: 3'b001 
+	Parameter receiving_instructions bound to: 3'b010 
+	Parameter continuos_execution bound to: 3'b011 
+	Parameter clock_execution bound to: 3'b100 
+	Parameter checking_hlt bound to: 3'b101 
+	Parameter create_instructions bound to: 3'b110 
+	Parameter stop_execution bound to: 3'b111 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:241]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:337]
+WARNING: [Synth 8-3848] Net led3_next in module/entity INTERFACE does not have driver. [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:164]
+INFO: [Synth 8-6155] done synthesizing module 'INTERFACE' (29#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:3]
+INFO: [Synth 8-6157] synthesizing module 'RX' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/RX.v:3]
+INFO: [Synth 8-226] default block is never used [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/RX.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'RX' (30#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/RX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'TX' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/TX.v:3]
+	Parameter DBIT bound to: 8 - type: integer 
+	Parameter SB_TICK bound to: 16 - type: integer 
+	Parameter idle bound to: 2'b00 
+	Parameter start bound to: 2'b01 
+	Parameter data bound to: 2'b10 
+	Parameter stop bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'TX' (31#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/TX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'UART' (32#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/UART.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'TPF' (33#1) [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/TPF.v:3]
+WARNING: [Synth 8-3917] design TPF has port led1 driven by constant 1
+WARNING: [Synth 8-3331] design INTERFACE has unconnected port boton
+WARNING: [Synth 8-3331] design HU has unconnected port in_Branch
+WARNING: [Synth 8-3331] design FU has unconnected port clk
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[31]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[30]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[29]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[28]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[27]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[26]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[25]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[24]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[23]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[22]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[21]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[20]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[19]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[18]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[17]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[16]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[15]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[14]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[13]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[12]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[11]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[10]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[9]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[8]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[7]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[6]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[5]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[4]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[3]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[2]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[1]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port in_instruction[0]
+WARNING: [Synth 8-3331] design ID has unconnected port taken
+WARNING: [Synth 8-3331] design IM has unconnected port address[31]
+WARNING: [Synth 8-3331] design IM has unconnected port address[30]
+WARNING: [Synth 8-3331] design IM has unconnected port address[29]
+WARNING: [Synth 8-3331] design IM has unconnected port address[28]
+WARNING: [Synth 8-3331] design IM has unconnected port address[27]
+WARNING: [Synth 8-3331] design IM has unconnected port address[26]
+WARNING: [Synth 8-3331] design IM has unconnected port address[25]
+WARNING: [Synth 8-3331] design IM has unconnected port address[24]
+WARNING: [Synth 8-3331] design IM has unconnected port address[23]
+WARNING: [Synth 8-3331] design IM has unconnected port address[22]
+WARNING: [Synth 8-3331] design IM has unconnected port address[21]
+WARNING: [Synth 8-3331] design IM has unconnected port address[20]
+WARNING: [Synth 8-3331] design IM has unconnected port address[19]
+WARNING: [Synth 8-3331] design IM has unconnected port address[18]
+WARNING: [Synth 8-3331] design IM has unconnected port address[17]
+WARNING: [Synth 8-3331] design IM has unconnected port address[16]
+WARNING: [Synth 8-3331] design IM has unconnected port address[15]
+WARNING: [Synth 8-3331] design IM has unconnected port address[14]
+WARNING: [Synth 8-3331] design IM has unconnected port address[13]
+WARNING: [Synth 8-3331] design IM has unconnected port address[12]
+WARNING: [Synth 8-3331] design IM has unconnected port address[11]
+WARNING: [Synth 8-3331] design IM has unconnected port address[10]
+WARNING: [Synth 8-3331] design IM has unconnected port address[9]
+WARNING: [Synth 8-3331] design IM has unconnected port address[8]
+WARNING: [Synth 8-3331] design IM has unconnected port address[7]
+WARNING: [Synth 8-3331] design IM has unconnected port address[6]
+WARNING: [Synth 8-3331] design IM has unconnected port address[5]
+WARNING: [Synth 8-3331] design IM has unconnected port address[4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 446.602 ; gain = 188.145
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 446.602 ; gain = 188.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 446.602 ; gain = 188.145
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/constrs_1/new/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/constrs_1/new/Nexys-4-DDR-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/constrs_1/new/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TPF_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TPF_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 814.988 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 814.988 ; gain = 556.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 814.988 ; gain = 556.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 814.988 ; gain = 556.531
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "instructions_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instructions_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instructions_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instructions_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instructions_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instructions_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instructions_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instructions_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instructions_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instructions_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instructions_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instructions_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instructions_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instructions_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instructions_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instructions_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state_next" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state_next" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "registers_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "registers_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "enable_pc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5587] ROM size for "operation" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "operation" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "taken" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "out_jal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "out_jalr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "ram_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[26]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[27]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[28]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[30]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ram_reg[31]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-4471] merging register 'IM_instruction_reg[31:0]' into 'instruction_reg_reg[31:0]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:199]
+WARNING: [Synth 8-6014] Unused sequential element IM_instruction_reg was removed.  [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:199]
+WARNING: [Synth 8-3936] Found unconnected internal register 'recibido_reg' and it is trimmed from '8' to '1' bits. [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:260]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_rx_reg' in module 'INTERFACE'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'INTERFACE'
+INFO: [Synth 8-5545] ROM "led2_next" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "led4_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "led5_next" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "first_step_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "led1_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bit_counter_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "instruction_ready" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state_next_rx" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_next_rx" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next_rx" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "state_next_rx" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "state_next_rx" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "datos" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "byteN_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "send_data_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "state_next" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'RX'
+INFO: [Synth 8-5544] ROM "rx_done_tick" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'TX'
+INFO: [Synth 8-5544] ROM "tx_done_tick" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  decode |                              000 |                              001
+  receiving_instructions |                              001 |                              010
+     create_instructions |                              010 |                              110
+            checking_hlt |                              011 |                              101
+         clock_execution |                              100 |                              100
+          stop_execution |                              101 |                              111
+     continuos_execution |                              110 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_rx_reg' using encoding 'sequential' in module 'INTERFACE'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 idle_tx |                              000 |                              000
+        waiting_for_data |                              001 |                              100
+                start_tx |                              010 |                              001
+             transmiting |                              011 |                              010
+                 waiting |                              100 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'INTERFACE'
+WARNING: [Synth 8-327] inferring latch for variable 'recibido_reg' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:260]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[0]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[1]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[2]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[3]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[4]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[5]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[6]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[7]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[8]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[9]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[10]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[11]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[12]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[13]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[14]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[15]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[16]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[17]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[18]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[19]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[20]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[21]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[22]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[23]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[24]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[25]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[26]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[27]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[28]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[29]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[30]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[31]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[32]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[33]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[34]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[35]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[36]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[37]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[38]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[39]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[40]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[41]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[42]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[43]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[44]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[45]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[46]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[47]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[48]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[49]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[50]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[51]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[52]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[53]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[54]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[55]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[56]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[57]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[58]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[59]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[60]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[61]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[62]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[63]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[64]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[65]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[66]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[67]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[68]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[69]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[70]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[71]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[72]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[73]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[74]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[75]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[76]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[77]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[78]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[79]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[80]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[81]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[82]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[83]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[84]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[85]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[86]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[87]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[88]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[89]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[90]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[91]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[92]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[93]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[94]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[95]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[96]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[97]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+WARNING: [Synth 8-327] inferring latch for variable 'datos_reg[98]' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:356]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                  iSTATE |                               01 |                               01
+                 iSTATE0 |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'RX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                   start |                               01 |                               01
+                    data |                               10 |                               10
+                    stop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'TX'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 814.988 ; gain = 556.531
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 99    
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 27    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 14    
+	   7 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 2     
+	   5 Input     32 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 2     
+	  14 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 8     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 131   
+	   3 Input      1 Bit        Muxes := 38    
+	   6 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 13    
+	   5 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module MUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module ADD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module IM 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 17    
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 37    
+	   3 Input      1 Bit        Muxes := 1     
+Module IF_ID 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Regs 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 34    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 33    
+	   3 Input      1 Bit        Muxes := 32    
+Module CONTROL 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 8     
+Module FiltroLoad 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   7 Input     32 Bit        Muxes := 1     
+Module ID 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ID_EX 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module MUX__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module MUX3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   3 Input      1 Bit        Muxes := 1     
+Module ALU_Control 
+Detailed RTL Component Info : 
++---Muxes : 
+	  14 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module MUX__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module Branch 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 7     
+	   6 Input      1 Bit        Muxes := 3     
+Module FiltroStore 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module EX_MEM 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
+Module DM 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 33    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module MEM_WB 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module FU 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+Module ClockCounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module BRG 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module INTERFACE 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   7 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 8     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 13    
+	   5 Input      1 Bit        Muxes := 5     
+Module RX 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 5     
+Module TX 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5587] ROM size for "aluC/operation" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5545] ROM "instruction_fetch/instruction_memory/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instruction_fetch/instruction_memory/instructions_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instruction_fetch/instruction_memory/instructions_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instruction_fetch/instruction_memory/instructions_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instruction_fetch/instruction_memory/instructions_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instruction_fetch/instruction_memory/instructions_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instruction_fetch/instruction_memory/instructions_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instruction_fetch/instruction_memory/instructions_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instruction_fetch/instruction_memory/instructions_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instruction_fetch/instruction_memory/instructions_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instruction_fetch/instruction_memory/instructions_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instruction_fetch/instruction_memory/instructions_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instruction_fetch/instruction_memory/instructions_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instruction_fetch/instruction_memory/instructions_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instruction_fetch/instruction_memory/instructions_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instruction_fetch/instruction_memory/instructions_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instruction_fetch/instruction_memory/instructions_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "instruction_fetch/instruction_memory/state_next" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_access/data_memory/ram_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_access/data_memory/ram_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_access/data_memory/ram_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_access/data_memory/ram_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_access/data_memory/ram_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_access/data_memory/ram_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_access/data_memory/ram_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_access/data_memory/ram_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_access/data_memory/ram_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_access/data_memory/ram_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_access/data_memory/ram_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_access/data_memory/ram_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_access/data_memory/ram_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_access/data_memory/ram_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_access/data_memory/ram_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_access/data_memory/ram_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_access/data_memory/ram_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_access/data_memory/ram_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_access/data_memory/ram_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_access/data_memory/ram_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_access/data_memory/ram_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_access/data_memory/ram_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_access/data_memory/ram_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_access/data_memory/ram_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_access/data_memory/ram_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "memory_access/data_memory/ram_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5546] ROM "led4_next" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design TPF has port led1 driven by constant 1
+WARNING: [Synth 8-3331] design INTERFACE has unconnected port boton
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[425][7]' (LD) to 'uart/interface/datos_reg[188][7]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[202][7]' (LD) to 'uart/interface/datos_reg[193][7]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[201][7]' (LD) to 'uart/interface/datos_reg[192][7]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[200][7]' (LD) to 'uart/interface/datos_reg[191][7]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[199][7]' (LD) to 'uart/interface/datos_reg[190][7]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[175][7]' (LD) to 'uart/interface/datos_reg[174][7]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[174][7]' (LD) to 'uart/interface/datos_reg[173][7]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[173][7]' (LD) to 'uart/interface/datos_reg[174][6]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[164][7]' (LD) to 'uart/interface/datos_reg[143][7]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[163][7]' (LD) to 'uart/interface/datos_reg[162][7]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[162][7]' (LD) to 'uart/interface/datos_reg[161][7]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[161][7]' (LD) to 'uart/interface/datos_reg[142][7]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[142][7]' (LD) to 'uart/interface/datos_reg[162][6]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[141][7]' (LD) to 'uart/interface/datos_reg[150][2]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[140][7]' (LD) to 'uart/interface/datos_reg[149][5]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[425][6]' (LD) to 'uart/interface/datos_reg[188][6]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[202][6]' (LD) to 'uart/interface/datos_reg[193][6]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[201][6]' (LD) to 'uart/interface/datos_reg[192][6]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[200][6]' (LD) to 'uart/interface/datos_reg[191][6]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[199][6]' (LD) to 'uart/interface/datos_reg[190][6]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[174][6]' (LD) to 'uart/interface/datos_reg[173][6]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[173][6]' (LD) to 'uart/interface/datos_reg[174][5]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[164][6]' (LD) to 'uart/interface/datos_reg[143][6]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[163][6]' (LD) to 'uart/interface/datos_reg[142][6]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[162][6]' (LD) to 'uart/interface/datos_reg[161][6]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[161][6]' (LD) to 'uart/interface/datos_reg[162][5]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[142][6]' (LD) to 'uart/interface/datos_reg[152][3]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[141][6]' (LD) to 'uart/interface/datos_reg[150][1]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[140][6]' (LD) to 'uart/interface/datos_reg[149][4]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[425][5]' (LD) to 'uart/interface/datos_reg[188][5]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[202][5]' (LD) to 'uart/interface/datos_reg[193][5]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[201][5]' (LD) to 'uart/interface/datos_reg[192][5]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[200][5]' (LD) to 'uart/interface/datos_reg[191][5]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[199][5]' (LD) to 'uart/interface/datos_reg[190][5]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[174][5]' (LD) to 'uart/interface/datos_reg[173][5]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[173][5]' (LD) to 'uart/interface/datos_reg[174][4]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[164][5]' (LD) to 'uart/interface/datos_reg[143][5]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[163][5]' (LD) to 'uart/interface/datos_reg[142][5]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[162][5]' (LD) to 'uart/interface/datos_reg[161][5]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[161][5]' (LD) to 'uart/interface/datos_reg[162][4]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[142][5]' (LD) to 'uart/interface/datos_reg[152][2]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[141][5]' (LD) to 'uart/interface/datos_reg[150][0]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[140][5]' (LD) to 'uart/interface/datos_reg[149][3]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[425][4]' (LD) to 'uart/interface/datos_reg[188][4]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[207][4]' (LD) to 'uart/interface/datos_reg[198][4]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[202][4]' (LD) to 'uart/interface/datos_reg[193][4]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[201][4]' (LD) to 'uart/interface/datos_reg[192][4]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[200][4]' (LD) to 'uart/interface/datos_reg[191][4]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[199][4]' (LD) to 'uart/interface/datos_reg[190][4]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[174][4]' (LD) to 'uart/interface/datos_reg[173][4]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[173][4]' (LD) to 'uart/interface/datos_reg[174][3]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[164][4]' (LD) to 'uart/interface/datos_reg[143][4]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[163][4]' (LD) to 'uart/interface/datos_reg[142][4]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[162][4]' (LD) to 'uart/interface/datos_reg[161][4]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[161][4]' (LD) to 'uart/interface/datos_reg[152][4]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[152][4]' (LD) to 'uart/interface/datos_reg[162][3]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[151][4]' (LD) to 'uart/interface/datos_reg[141][4]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[150][4]' (LD) to 'uart/interface/datos_reg[140][1]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[142][4]' (LD) to 'uart/interface/datos_reg[152][1]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[140][4]' (LD) to 'uart/interface/datos_reg[149][2]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[425][3]' (LD) to 'uart/interface/datos_reg[188][3]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[207][3]' (LD) to 'uart/interface/datos_reg[198][3]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[202][3]' (LD) to 'uart/interface/datos_reg[193][3]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[201][3]' (LD) to 'uart/interface/datos_reg[192][3]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[200][3]' (LD) to 'uart/interface/datos_reg[191][3]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[199][3]' (LD) to 'uart/interface/datos_reg[190][3]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[174][3]' (LD) to 'uart/interface/datos_reg[173][3]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[173][3]' (LD) to 'uart/interface/datos_reg[174][2]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[164][3]' (LD) to 'uart/interface/datos_reg[143][3]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[163][3]' (LD) to 'uart/interface/datos_reg[142][3]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[162][3]' (LD) to 'uart/interface/datos_reg[161][3]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[161][3]' (LD) to 'uart/interface/datos_reg[162][2]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[151][3]' (LD) to 'uart/interface/datos_reg[141][3]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[150][3]' (LD) to 'uart/interface/datos_reg[140][0]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[142][3]' (LD) to 'uart/interface/datos_reg[152][0]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[140][3]' (LD) to 'uart/interface/datos_reg[149][1]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[425][2]' (LD) to 'uart/interface/datos_reg[188][2]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[207][2]' (LD) to 'uart/interface/datos_reg[198][2]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[202][2]' (LD) to 'uart/interface/datos_reg[193][2]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[201][2]' (LD) to 'uart/interface/datos_reg[192][2]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[200][2]' (LD) to 'uart/interface/datos_reg[191][2]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[199][2]' (LD) to 'uart/interface/datos_reg[190][2]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[174][2]' (LD) to 'uart/interface/datos_reg[173][2]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[173][2]' (LD) to 'uart/interface/datos_reg[174][1]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[164][2]' (LD) to 'uart/interface/datos_reg[143][2]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[163][2]' (LD) to 'uart/interface/datos_reg[142][2]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[162][2]' (LD) to 'uart/interface/datos_reg[161][2]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[161][2]' (LD) to 'uart/interface/datos_reg[162][1]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[151][2]' (LD) to 'uart/interface/datos_reg[141][2]'
+INFO: [Synth 8-3886] merging instance 'uart/interface/datos_reg[140][2]' (LD) to 'uart/interface/datos_reg[149][0]'
+INFO: [Synth 8-3886] merging instance 'pipe/reg_id_ex/out_instruction_reg[25]' (FDRE) to 'pipe/reg_id_ex/out_registerRs_reg[4]'
+INFO: [Synth 8-3886] merging instance 'pipe/reg_id_ex/out_instruction_reg[6]' (FDRE) to 'pipe/reg_id_ex/out_se_sign_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pipe/reg_id_ex/out_instruction_reg[7]' (FDRE) to 'pipe/reg_id_ex/out_se_sign_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pipe/reg_id_ex/out_instruction_reg[9]' (FDRE) to 'pipe/reg_id_ex/out_se_sign_reg[9]'
+INFO: [Synth 8-3886] merging instance 'pipe/reg_id_ex/out_instruction_reg[10]' (FDRE) to 'pipe/reg_id_ex/out_se_sign_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pipe/reg_id_ex/out_instruction_reg[11]' (FDRE) to 'pipe/reg_id_ex/out_registerRd_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pipe/reg_id_ex/out_instruction_reg[12]' (FDRE) to 'pipe/reg_id_ex/out_registerRd_reg[1]'
+INFO: [Synth 8-3886] merging instance 'pipe/reg_id_ex/out_instruction_reg[13]' (FDRE) to 'pipe/reg_id_ex/out_registerRd_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pipe/reg_id_ex/out_instruction_reg[14]' (FDRE) to 'pipe/reg_id_ex/out_registerRd_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pipe/reg_id_ex/out_instruction_reg[15]' (FDRE) to 'pipe/reg_id_ex/out_registerRd_reg[4]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart/interface/bit_counter_reg_reg[31] )
+WARNING: [Synth 8-3332] Sequential element (uart/interface/led2_reg_reg) is unused and will be removed from module TPF.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'uart/interface/led2_reg_reg/Q' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:188]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:188]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/INTERFACE.v:188]
+WARNING: [Synth 8-3332] Sequential element (uart/interface/bit_counter_reg_reg[31]) is unused and will be removed from module TPF.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 929.734 ; gain = 671.277
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:14 ; elapsed = 00:01:19 . Memory (MB): peak = 929.734 ; gain = 671.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:16 ; elapsed = 00:01:21 . Memory (MB): peak = 929.734 ; gain = 671.277
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (uart/interface/led3_reg_reg) is unused and will be removed from module TPF.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:20 ; elapsed = 00:01:24 . Memory (MB): peak = 929.734 ; gain = 671.277
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:22 ; elapsed = 00:01:26 . Memory (MB): peak = 929.734 ; gain = 671.277
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:22 ; elapsed = 00:01:26 . Memory (MB): peak = 929.734 ; gain = 671.277
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:22 ; elapsed = 00:01:27 . Memory (MB): peak = 929.734 ; gain = 671.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:22 ; elapsed = 00:01:27 . Memory (MB): peak = 929.734 ; gain = 671.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 929.734 ; gain = 671.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 929.734 ; gain = 671.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    74|
+|3     |LUT1   |     8|
+|4     |LUT2   |   157|
+|5     |LUT3   |   253|
+|6     |LUT4   |   188|
+|7     |LUT5   |   455|
+|8     |LUT6   |  2429|
+|9     |MUXF7  |   884|
+|10    |MUXF8  |   215|
+|11    |FDCE   |  1086|
+|12    |FDPE   |    82|
+|13    |FDRE   |  2010|
+|14    |FDSE   |    80|
+|15    |LD     |  3281|
+|16    |IBUF   |     3|
+|17    |OBUF   |     7|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------------+-------------+------+
+|      |Instance                 |Module       |Cells |
++------+-------------------------+-------------+------+
+|1     |top                      |             | 11214|
+|2     |  pipe                   |Pipeline     |  5978|
+|3     |    instruction_decoder  |ID           |  1920|
+|4     |      registers          |Regs         |  1920|
+|5     |    execution            |EX           |    51|
+|6     |      alu                |ALU          |    43|
+|7     |      branch             |Branch       |     8|
+|8     |    CC                   |ClockCounter |    17|
+|9     |    instruction_fetch    |IF           |   900|
+|10    |      add                |ADD          |     8|
+|11    |      instruction_memory |IM           |   859|
+|12    |      pc__0              |PC           |    33|
+|13    |    memory_access        |MEM          |  1473|
+|14    |      data_memory        |DM           |  1473|
+|15    |    reg_ex_mem           |EX_MEM       |   190|
+|16    |    reg_id_ex            |ID_EX        |   696|
+|17    |    reg_if_id            |IF_ID        |   111|
+|18    |    reg_mem_wb           |MEM_WB       |   620|
+|19    |  uart                   |UART         |  5223|
+|20    |    brg                  |BRG          |    22|
+|21    |    interface            |INTERFACE    |  5109|
+|22    |    rx_unit              |RX           |    48|
+|23    |    tx_unit              |TX           |    44|
++------+-------------------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 929.734 ; gain = 671.277
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 3 critical warnings and 438 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:07 ; elapsed = 00:01:16 . Memory (MB): peak = 929.734 ; gain = 302.891
+Synthesis Optimization Complete : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 929.734 ; gain = 671.277
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 4457 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3281 instances were transformed.
+  LD => LDCE: 3281 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+394 Infos, 174 Warnings, 3 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:29 ; elapsed = 00:01:34 . Memory (MB): peak = 929.734 ; gain = 684.289
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.runs/synth_1/TPF.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TPF_utilization_synth.rpt -pb TPF_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.158 . Memory (MB): peak = 929.734 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 26 17:34:16 2018...

@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb01_pipeline_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb01_pipeline" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1000000001fs"></ZoomEndTime>
+      <Cursor1Time time="206687000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="265"></NameColumnWidth>
+      <ValueColumnWidth column_width="121"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/tb01_pipeline/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb01_pipeline/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb01_pipeline/step" type="logic">
+      <obj_property name="ElementShortName">step</obj_property>
+      <obj_property name="ObjectShortName">step</obj_property>
+   </wvobject>
+   <wvobject fp_name="group171" type="group">
+      <obj_property name="label">IF</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_fetch/out_if_add" type="array">
+         <obj_property name="ElementShortName">out_if_add[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out_if_add[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_fetch/instruction" type="array">
+         <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+         <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group181" type="group">
+      <obj_property name="label">IFID</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_if_id/in_if_add" type="array">
+         <obj_property name="ElementShortName">in_if_add[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in_if_add[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_if_id/in_instruction" type="array">
+         <obj_property name="ElementShortName">in_instruction[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in_instruction[31:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_if_id/out_if_add" type="array">
+         <obj_property name="ElementShortName">out_if_add[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out_if_add[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_if_id/out_instruction" type="array">
+         <obj_property name="ElementShortName">out_instruction[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out_instruction[31:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group182" type="group">
+      <obj_property name="label">ID</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/in_if_add" type="array">
+         <obj_property name="ElementShortName">in_if_add[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in_if_add[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/in_instruction" type="array">
+         <obj_property name="ElementShortName">in_instruction[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in_instruction[31:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/out_if_add" type="array">
+         <obj_property name="ElementShortName">out_if_add[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out_if_add[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/out_instruction" type="array">
+         <obj_property name="ElementShortName">out_instruction[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out_instruction[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/out_opcode" type="array">
+         <obj_property name="ElementShortName">out_opcode[5:0]</obj_property>
+         <obj_property name="ObjectShortName">out_opcode[5:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/out_read_data1" type="array">
+         <obj_property name="ElementShortName">out_read_data1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out_read_data1[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/out_read_data2" type="array">
+         <obj_property name="ElementShortName">out_read_data2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out_read_data2[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/out_sign" type="array">
+         <obj_property name="ElementShortName">out_sign[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out_sign[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/ID_RegisterRd" type="array">
+         <obj_property name="ElementShortName">ID_RegisterRd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_RegisterRd[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/ID_RegisterRt" type="array">
+         <obj_property name="ElementShortName">ID_RegisterRt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_RegisterRt[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/ID_RegisterRs" type="array">
+         <obj_property name="ElementShortName">ID_RegisterRs[4:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_RegisterRs[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group183" type="group">
+      <obj_property name="label">IDEX</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_id_ex/in_if_add" type="array">
+         <obj_property name="ElementShortName">in_if_add[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in_if_add[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_id_ex/in_instruction" type="array">
+         <obj_property name="ElementShortName">in_instruction[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in_instruction[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_id_ex/in_opcode" type="array">
+         <obj_property name="ElementShortName">in_opcode[5:0]</obj_property>
+         <obj_property name="ObjectShortName">in_opcode[5:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_id_ex/in_regs_read_data1" type="array">
+         <obj_property name="ElementShortName">in_regs_read_data1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in_regs_read_data1[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_id_ex/in_regs_read_data2" type="array">
+         <obj_property name="ElementShortName">in_regs_read_data2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in_regs_read_data2[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_id_ex/in_se_sign" type="array">
+         <obj_property name="ElementShortName">in_se_sign[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in_se_sign[31:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_id_ex/in_registerRd" type="array">
+         <obj_property name="ElementShortName">in_registerRd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">in_registerRd[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_id_ex/in_registerRt" type="array">
+         <obj_property name="ElementShortName">in_registerRt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">in_registerRt[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_id_ex/in_registerRs" type="array">
+         <obj_property name="ElementShortName">in_registerRs[4:0]</obj_property>
+         <obj_property name="ObjectShortName">in_registerRs[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_id_ex/out_if_add" type="array">
+         <obj_property name="ElementShortName">out_if_add[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out_if_add[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_id_ex/out_instruction" type="array">
+         <obj_property name="ElementShortName">out_instruction[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out_instruction[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_id_ex/out_opcode" type="array">
+         <obj_property name="ElementShortName">out_opcode[5:0]</obj_property>
+         <obj_property name="ObjectShortName">out_opcode[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_id_ex/out_regs_read_data1" type="array">
+         <obj_property name="ElementShortName">out_regs_read_data1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out_regs_read_data1[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_id_ex/out_regs_read_data2" type="array">
+         <obj_property name="ElementShortName">out_regs_read_data2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out_regs_read_data2[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_id_ex/out_se_sign" type="array">
+         <obj_property name="ElementShortName">out_se_sign[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out_se_sign[31:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_id_ex/out_registerRd" type="array">
+         <obj_property name="ElementShortName">out_registerRd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">out_registerRd[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_id_ex/out_registerRt" type="array">
+         <obj_property name="ElementShortName">out_registerRt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">out_registerRt[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_id_ex/out_registerRs" type="array">
+         <obj_property name="ElementShortName">out_registerRs[4:0]</obj_property>
+         <obj_property name="ObjectShortName">out_registerRs[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group184" type="group">
+      <obj_property name="label">EX</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb01_pipeline/uut/execution/in_read_data_1" type="array">
+         <obj_property name="ElementShortName">in_read_data_1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in_read_data_1[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/execution/in_read_data_2" type="array">
+         <obj_property name="ElementShortName">in_read_data_2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in_read_data_2[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/execution/in_sign_extend" type="array">
+         <obj_property name="ElementShortName">in_sign_extend[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in_sign_extend[31:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/execution/alu/in_data_read_1" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">in_data_read_1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in_data_read_1[31:0]</obj_property>
+         <obj_property name="label">ALU in A</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/execution/alu/in_ex_mux" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">in_ex_mux[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in_ex_mux[31:0]</obj_property>
+         <obj_property name="label">ALU in B</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/execution/alu_result" type="array">
+         <obj_property name="ElementShortName">alu_result[31:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_result[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/execution/out_read_data_2" type="array">
+         <obj_property name="ElementShortName">out_read_data_2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out_read_data_2[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/execution/out_write_register" type="array">
+         <obj_property name="ElementShortName">out_write_register[4:0]</obj_property>
+         <obj_property name="ObjectShortName">out_write_register[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/execution/out_ex_mux_shamt" type="array">
+         <obj_property name="ElementShortName">out_ex_mux_shamt[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out_ex_mux_shamt[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/execution/out_ex_mux" type="array">
+         <obj_property name="ElementShortName">out_ex_mux[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out_ex_mux[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/execution/operation" type="array">
+         <obj_property name="ElementShortName">operation[3:0]</obj_property>
+         <obj_property name="ObjectShortName">operation[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="group438" type="group">
+         <obj_property name="label">BRANCH</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb01_pipeline/uut/execution/branch/in_read_data1" type="array">
+            <obj_property name="ElementShortName">in_read_data1[31:0]</obj_property>
+            <obj_property name="ObjectShortName">in_read_data1[31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb01_pipeline/uut/execution/branch/in_read_data2" type="array">
+            <obj_property name="ElementShortName">in_read_data2[31:0]</obj_property>
+            <obj_property name="ObjectShortName">in_read_data2[31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb01_pipeline/uut/execution/taken" type="logic">
+            <obj_property name="ElementShortName">taken</obj_property>
+            <obj_property name="ObjectShortName">taken</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb01_pipeline/uut/execution/branch/out_jal" type="logic">
+            <obj_property name="ElementShortName">out_jal</obj_property>
+            <obj_property name="ObjectShortName">out_jal</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb01_pipeline/uut/execution/branch/out_jalr" type="logic">
+            <obj_property name="ElementShortName">out_jalr</obj_property>
+            <obj_property name="ObjectShortName">out_jalr</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb01_pipeline/uut/execution/out_pc_branch" type="array">
+            <obj_property name="ElementShortName">out_pc_branch[31:0]</obj_property>
+            <obj_property name="ObjectShortName">out_pc_branch[31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group185" type="group">
+      <obj_property name="label">EXMEM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_ex_mem/in_alu_result" type="array">
+         <obj_property name="ElementShortName">in_alu_result[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in_alu_result[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_ex_mem/in_read_data_2" type="array">
+         <obj_property name="ElementShortName">in_read_data_2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in_read_data_2[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_ex_mem/in_write_register" type="array">
+         <obj_property name="ElementShortName">in_write_register[4:0]</obj_property>
+         <obj_property name="ObjectShortName">in_write_register[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_ex_mem/out_alu_result" type="array">
+         <obj_property name="ElementShortName">out_alu_result[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out_alu_result[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_ex_mem/out_read_data_2" type="array">
+         <obj_property name="ElementShortName">out_read_data_2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out_read_data_2[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_ex_mem/out_write_register" type="array">
+         <obj_property name="ElementShortName">out_write_register[4:0]</obj_property>
+         <obj_property name="ObjectShortName">out_write_register[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group186" type="group">
+      <obj_property name="label">MEM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/in_alu_result" type="array">
+         <obj_property name="ElementShortName">in_alu_result[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in_alu_result[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/in_read_data_2" type="array">
+         <obj_property name="ElementShortName">in_read_data_2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in_read_data_2[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/in_write_register" type="array">
+         <obj_property name="ElementShortName">in_write_register[4:0]</obj_property>
+         <obj_property name="ObjectShortName">in_write_register[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/out_alu_result" type="array">
+         <obj_property name="ElementShortName">out_alu_result[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out_alu_result[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/out_read_data" type="array">
+         <obj_property name="ElementShortName">out_read_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out_read_data[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/out_write_register" type="array">
+         <obj_property name="ElementShortName">out_write_register[4:0]</obj_property>
+         <obj_property name="ObjectShortName">out_write_register[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group187" type="group">
+      <obj_property name="label">MEMWB</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_mem_wb/in_read_data" type="array">
+         <obj_property name="ElementShortName">in_read_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in_read_data[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_mem_wb/in_alu_result" type="array">
+         <obj_property name="ElementShortName">in_alu_result[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in_alu_result[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_mem_wb/in_write_register" type="array">
+         <obj_property name="ElementShortName">in_write_register[4:0]</obj_property>
+         <obj_property name="ObjectShortName">in_write_register[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_mem_wb/out_read_data" type="array">
+         <obj_property name="ElementShortName">out_read_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out_read_data[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_mem_wb/out_alu_result" type="array">
+         <obj_property name="ElementShortName">out_alu_result[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out_alu_result[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/reg_mem_wb/out_write_register" type="array">
+         <obj_property name="ElementShortName">out_write_register[4:0]</obj_property>
+         <obj_property name="ObjectShortName">out_write_register[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group188" type="group">
+      <obj_property name="label">WB</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb01_pipeline/uut/write_back/in_read_data" type="array">
+         <obj_property name="ElementShortName">in_read_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in_read_data[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/write_back/in_alu_result" type="array">
+         <obj_property name="ElementShortName">in_alu_result[31:0]</obj_property>
+         <obj_property name="ObjectShortName">in_alu_result[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/write_back/out_mux" type="array">
+         <obj_property name="ElementShortName">out_mux[31:0]</obj_property>
+         <obj_property name="ObjectShortName">out_mux[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group493" type="group">
+      <obj_property name="label">FU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb01_pipeline/uut/forwarding_unit/in_registerRs" type="array">
+         <obj_property name="ElementShortName">in_registerRs[4:0]</obj_property>
+         <obj_property name="ObjectShortName">in_registerRs[4:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/forwarding_unit/in_registerRt" type="array">
+         <obj_property name="ElementShortName">in_registerRt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">in_registerRt[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/forwarding_unit/in_exmem_registerRd" type="array">
+         <obj_property name="ElementShortName">in_exmem_registerRd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">in_exmem_registerRd[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/forwarding_unit/in_memwb_registerRd" type="array">
+         <obj_property name="ElementShortName">in_memwb_registerRd[4:0]</obj_property>
+         <obj_property name="ObjectShortName">in_memwb_registerRd[4:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/forwarding_unit/in_exmem_RegWrite" type="logic">
+         <obj_property name="ElementShortName">in_exmem_RegWrite</obj_property>
+         <obj_property name="ObjectShortName">in_exmem_RegWrite</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/forwarding_unit/in_memwb_RegWrite" type="logic">
+         <obj_property name="ElementShortName">in_memwb_RegWrite</obj_property>
+         <obj_property name="ObjectShortName">in_memwb_RegWrite</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/forwarding_unit/out_forwardA" type="array">
+         <obj_property name="ElementShortName">out_forwardA[1:0]</obj_property>
+         <obj_property name="ObjectShortName">out_forwardA[1:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/forwarding_unit/out_forwardB" type="array">
+         <obj_property name="ElementShortName">out_forwardB[1:0]</obj_property>
+         <obj_property name="ObjectShortName">out_forwardB[1:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/forwarding_unit/forwardA" type="array">
+         <obj_property name="ElementShortName">forwardA[1:0]</obj_property>
+         <obj_property name="ObjectShortName">forwardA[1:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/forwarding_unit/forwardB" type="array">
+         <obj_property name="ElementShortName">forwardB[1:0]</obj_property>
+         <obj_property name="ObjectShortName">forwardB[1:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group494" type="group">
+      <obj_property name="label">HU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb01_pipeline/uut/hazard_unit/in_IDEX_MemRead" type="logic">
+         <obj_property name="ElementShortName">in_IDEX_MemRead</obj_property>
+         <obj_property name="ObjectShortName">in_IDEX_MemRead</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/hazard_unit/in_IDEX_RegisterRt" type="array">
+         <obj_property name="ElementShortName">in_IDEX_RegisterRt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">in_IDEX_RegisterRt[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/hazard_unit/in_IFID_RegisterRs" type="array">
+         <obj_property name="ElementShortName">in_IFID_RegisterRs[4:0]</obj_property>
+         <obj_property name="ObjectShortName">in_IFID_RegisterRs[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/hazard_unit/in_IFID_RegisterRt" type="array">
+         <obj_property name="ElementShortName">in_IFID_RegisterRt[4:0]</obj_property>
+         <obj_property name="ObjectShortName">in_IFID_RegisterRt[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/hazard_unit/out_noStall" type="logic">
+         <obj_property name="ElementShortName">out_noStall</obj_property>
+         <obj_property name="ObjectShortName">out_noStall</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group510" type="group">
+      <obj_property name="label">CC</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb01_pipeline/uut/CC/data" type="array">
+         <obj_property name="ElementShortName">data[5:0]</obj_property>
+         <obj_property name="ObjectShortName">data[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/CC/contador_clk" type="array">
+         <obj_property name="ElementShortName">contador_clk[7:0]</obj_property>
+         <obj_property name="ObjectShortName">contador_clk[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group189" type="group">
+      <obj_property name="label">REGISTROS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_0" type="array">
+         <obj_property name="ElementShortName">reg_0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_0[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_1" type="array">
+         <obj_property name="ElementShortName">reg_1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_1[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_2" type="array">
+         <obj_property name="ElementShortName">reg_2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_2[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_3" type="array">
+         <obj_property name="ElementShortName">reg_3[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_3[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_4" type="array">
+         <obj_property name="ElementShortName">reg_4[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_4[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_5" type="array">
+         <obj_property name="ElementShortName">reg_5[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_5[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_6" type="array">
+         <obj_property name="ElementShortName">reg_6[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_6[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_7" type="array">
+         <obj_property name="ElementShortName">reg_7[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_7[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_8" type="array">
+         <obj_property name="ElementShortName">reg_8[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_8[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_9" type="array">
+         <obj_property name="ElementShortName">reg_9[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_9[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_10" type="array">
+         <obj_property name="ElementShortName">reg_10[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_10[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_11" type="array">
+         <obj_property name="ElementShortName">reg_11[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_11[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_12" type="array">
+         <obj_property name="ElementShortName">reg_12[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_12[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_13" type="array">
+         <obj_property name="ElementShortName">reg_13[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_13[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_14" type="array">
+         <obj_property name="ElementShortName">reg_14[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_14[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_15" type="array">
+         <obj_property name="ElementShortName">reg_15[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_15[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_16" type="array">
+         <obj_property name="ElementShortName">reg_16[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_16[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_17" type="array">
+         <obj_property name="ElementShortName">reg_17[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_17[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_18" type="array">
+         <obj_property name="ElementShortName">reg_18[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_18[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_19" type="array">
+         <obj_property name="ElementShortName">reg_19[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_19[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_20" type="array">
+         <obj_property name="ElementShortName">reg_20[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_20[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_21" type="array">
+         <obj_property name="ElementShortName">reg_21[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_21[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_22" type="array">
+         <obj_property name="ElementShortName">reg_22[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_22[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_23" type="array">
+         <obj_property name="ElementShortName">reg_23[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_23[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_24" type="array">
+         <obj_property name="ElementShortName">reg_24[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_24[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_25" type="array">
+         <obj_property name="ElementShortName">reg_25[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_25[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_26" type="array">
+         <obj_property name="ElementShortName">reg_26[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_26[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_27" type="array">
+         <obj_property name="ElementShortName">reg_27[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_27[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_28" type="array">
+         <obj_property name="ElementShortName">reg_28[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_28[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_29" type="array">
+         <obj_property name="ElementShortName">reg_29[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_29[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_30" type="array">
+         <obj_property name="ElementShortName">reg_30[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_30[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/instruction_decoder/reg_31" type="array">
+         <obj_property name="ElementShortName">reg_31[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_31[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group190" type="group">
+      <obj_property name="label">MEMORIA</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_0" type="array">
+         <obj_property name="ElementShortName">ram_0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_0[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_1" type="array">
+         <obj_property name="ElementShortName">ram_1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_1[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_2" type="array">
+         <obj_property name="ElementShortName">ram_2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_2[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_3" type="array">
+         <obj_property name="ElementShortName">ram_3[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_3[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_4" type="array">
+         <obj_property name="ElementShortName">ram_4[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_4[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_5" type="array">
+         <obj_property name="ElementShortName">ram_5[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_5[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_6" type="array">
+         <obj_property name="ElementShortName">ram_6[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_6[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_7" type="array">
+         <obj_property name="ElementShortName">ram_7[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_7[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_8" type="array">
+         <obj_property name="ElementShortName">ram_8[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_8[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_9" type="array">
+         <obj_property name="ElementShortName">ram_9[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_9[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_10" type="array">
+         <obj_property name="ElementShortName">ram_10[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_10[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_11" type="array">
+         <obj_property name="ElementShortName">ram_11[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_11[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_12" type="array">
+         <obj_property name="ElementShortName">ram_12[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_12[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_13" type="array">
+         <obj_property name="ElementShortName">ram_13[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_13[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_14" type="array">
+         <obj_property name="ElementShortName">ram_14[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_14[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_15" type="array">
+         <obj_property name="ElementShortName">ram_15[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_15[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_16" type="array">
+         <obj_property name="ElementShortName">ram_16[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_16[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_17" type="array">
+         <obj_property name="ElementShortName">ram_17[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_17[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_18" type="array">
+         <obj_property name="ElementShortName">ram_18[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_18[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_19" type="array">
+         <obj_property name="ElementShortName">ram_19[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_19[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_20" type="array">
+         <obj_property name="ElementShortName">ram_20[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_20[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_21" type="array">
+         <obj_property name="ElementShortName">ram_21[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_21[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_22" type="array">
+         <obj_property name="ElementShortName">ram_22[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_22[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_23" type="array">
+         <obj_property name="ElementShortName">ram_23[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_23[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_24" type="array">
+         <obj_property name="ElementShortName">ram_24[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_24[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_25" type="array">
+         <obj_property name="ElementShortName">ram_25[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_25[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_26" type="array">
+         <obj_property name="ElementShortName">ram_26[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_26[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_27" type="array">
+         <obj_property name="ElementShortName">ram_27[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_27[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_28" type="array">
+         <obj_property name="ElementShortName">ram_28[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_28[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_29" type="array">
+         <obj_property name="ElementShortName">ram_29[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_29[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_30" type="array">
+         <obj_property name="ElementShortName">ram_30[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_30[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb01_pipeline/uut/memory_access/ram_31" type="array">
+         <obj_property name="ElementShortName">ram_31[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_31[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

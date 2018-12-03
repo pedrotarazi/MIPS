@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/ALU_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sources_1/new/CTRL_ALUCTRL_ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CTRL_ALUCTRL_ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.srcs/sim_1/new/tb01_ctrl_aluctrl_alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb01_ctrl_aluctrl_alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Elementary/Facultad/Arquitectura/TPFinal/TPFinal.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

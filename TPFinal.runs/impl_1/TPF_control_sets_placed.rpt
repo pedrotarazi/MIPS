@@ -1,0 +1,171 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Wed Sep 26 17:35:26 2018
+| Host         : DESKTOP-40P8BBI running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TPF_control_sets_placed.rpt
+| Design       : TPF
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   104 |
+| Unused register locations in slices containing registers |    50 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            5 |
+|      8 |            2 |
+|     10 |            1 |
+|    16+ |           96 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            6566 |         1197 |
+| No           | No                    | Yes                    |             112 |           30 |
+| No           | Yes                   | No                     |              18 |            3 |
+| Yes          | No                    | No                     |            1280 |          240 |
+| Yes          | No                    | Yes                    |            2224 |          505 |
+| Yes          | Yes                   | No                     |            2878 |          553 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------+------------------------------------------------------------------------+------------------------------------------------+------------------+----------------+
+|               Clock Signal              |                              Enable Signal                             |                Set/Reset Signal                | Slice Load Count | Bel Load Count |
++-----------------------------------------+------------------------------------------------------------------------+------------------------------------------------+------------------+----------------+
+|  uart/interface/recibido_reg[0]_i_1_n_0 |                                                                        |                                                |                1 |              2 |
+|  clk_IBUF_BUFG                          |                                                                        |                                                |                1 |              2 |
+|  clk_IBUF_BUFG                          | uart/interface/led5_next                                               | pipe/memory_access/data_memory/SR[0]           |                1 |              2 |
+|  clk_IBUF_BUFG                          | uart/interface/led1_next                                               | pipe/memory_access/data_memory/SR[0]           |                1 |              2 |
+| ~clk_IBUF_BUFG                          |                                                                        |                                                |                1 |              2 |
+|  clk_IBUF_BUFG                          | uart/rx_unit/s_next                                                    | pipe/memory_access/data_memory/SR[0]           |                2 |              8 |
+|  clk_IBUF_BUFG                          | uart/tx_unit/s_next                                                    | pipe/memory_access/data_memory/SR[0]           |                2 |              8 |
+|  clk_IBUF_BUFG                          | uart/interface/bit_counter_reg[4]_i_1_n_0                              | pipe/memory_access/data_memory/SR[0]           |                2 |             10 |
+|  clk_IBUF_BUFG                          | uart/interface/send_data_next                                          | pipe/memory_access/data_memory/SR[0]           |                4 |             16 |
+|  clk_IBUF_BUFG                          | uart/rx_unit/b_next                                                    | pipe/memory_access/data_memory/SR[0]           |                3 |             16 |
+|  clk_IBUF_BUFG                          | uart/tx_unit/b_reg[7]_i_1__0_n_0                                       | pipe/memory_access/data_memory/SR[0]           |                3 |             16 |
+|  clk_IBUF_BUFG                          |                                                                        | uart/brg/clear                                 |                3 |             18 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[31][0][0]                                      | pipe/memory_access/data_memory/SR[0]           |               10 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[7][0][0]                                       | pipe/memory_access/data_memory/SR[0]           |               17 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[9][0][0]                                       | pipe/memory_access/data_memory/SR[0]           |               14 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[29][0][0]                                      | pipe/memory_access/data_memory/SR[0]           |               11 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[28][0][0]                                      | pipe/memory_access/data_memory/SR[0]           |               10 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[20][0][0]                                      | pipe/memory_access/data_memory/SR[0]           |               17 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[18][0][0]                                      | pipe/memory_access/data_memory/SR[0]           |               10 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[30][0][0]                                      | pipe/memory_access/data_memory/SR[0]           |               11 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[3][0][0]                                       | pipe/memory_access/data_memory/SR[0]           |               14 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[12][0][0]                                      | pipe/memory_access/data_memory/SR[0]           |               12 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[6][0][0]                                       | pipe/memory_access/data_memory/SR[0]           |               12 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[13][0][0]                                      | pipe/memory_access/data_memory/SR[0]           |               11 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[22][0][0]                                      | pipe/memory_access/data_memory/SR[0]           |               12 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[23][0][0]                                      | pipe/memory_access/data_memory/SR[0]           |               13 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[26][0][0]                                      | pipe/memory_access/data_memory/SR[0]           |               12 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[14][0][0]                                      | pipe/memory_access/data_memory/SR[0]           |               14 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[24][0][0]                                      | pipe/memory_access/data_memory/SR[0]           |               12 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[4][0][0]                                       | pipe/memory_access/data_memory/SR[0]           |               10 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[5][0][0]                                       | pipe/memory_access/data_memory/SR[0]           |                7 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[21][0][0]                                      | pipe/memory_access/data_memory/SR[0]           |               14 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[2][0][0]                                       | pipe/memory_access/data_memory/SR[0]           |               15 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[8][0][0]                                       | pipe/memory_access/data_memory/SR[0]           |               13 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[17][0][0]                                      | pipe/memory_access/data_memory/SR[0]           |               13 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[16][0][0]                                      | pipe/memory_access/data_memory/SR[0]           |               16 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[25][0][0]                                      | pipe/memory_access/data_memory/SR[0]           |                9 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_id_ex/E[0]                                                    | pipe/memory_access/data_memory/SR[0]           |               12 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_if_id/out_pc_reg[0]_0                                         | pipe/memory_access/data_memory/SR[0]           |                8 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_if_id/registers_reg[29][0][0]                                 | pipe/memory_access/data_memory/SR[0]           |               13 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_if_id/registers_reg[27][0][0]                                 | pipe/memory_access/data_memory/SR[0]           |               16 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_if_id/registers_reg[25][0][0]                                 | pipe/memory_access/data_memory/SR[0]           |               10 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/registers_reg[1][0][0]                                 | pipe/memory_access/data_memory/SR[0]           |               12 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/registers_reg[18][0][0]                                | pipe/memory_access/data_memory/SR[0]           |               14 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/registers_reg[19][0][0]                                | pipe/memory_access/data_memory/SR[0]           |               17 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/registers_reg[16][0][0]                                | pipe/memory_access/data_memory/SR[0]           |               15 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/registers_reg[20][0][0]                                | pipe/memory_access/data_memory/SR[0]           |               12 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/registers_reg[21][0][0]                                | pipe/memory_access/data_memory/SR[0]           |               14 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/registers_reg[22][0][0]                                | pipe/memory_access/data_memory/SR[0]           |               13 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/registers_reg[11][0][0]                                | pipe/memory_access/data_memory/SR[0]           |               18 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/registers_reg[23][0][0]                                | pipe/memory_access/data_memory/SR[0]           |               14 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/registers_reg[26][0][0]                                | pipe/memory_access/data_memory/SR[0]           |               17 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/registers_reg[28][0][0]                                | pipe/memory_access/data_memory/SR[0]           |               16 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/registers_reg[30][0][0]                                | pipe/memory_access/data_memory/SR[0]           |               12 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/registers_reg[2][0][0]                                 | pipe/memory_access/data_memory/SR[0]           |               15 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/registers_reg[15][0][0]                                | pipe/memory_access/data_memory/SR[0]           |               15 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/registers_reg[17][0][0]                                | pipe/memory_access/data_memory/SR[0]           |               16 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/registers_reg[31][0][0]                                | pipe/memory_access/data_memory/SR[0]           |               18 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/registers_reg[12][0][0]                                | pipe/memory_access/data_memory/SR[0]           |               13 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/registers_reg[14][0][0]                                | pipe/memory_access/data_memory/SR[0]           |               15 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/registers_reg[24][0][0]                                | pipe/memory_access/data_memory/SR[0]           |               11 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/registers_reg[10][0][0]                                | pipe/memory_access/data_memory/SR[0]           |               14 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/registers_reg[13][0][0]                                | pipe/memory_access/data_memory/SR[0]           |               17 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/registers_reg[5][0][0]                                 | pipe/memory_access/data_memory/SR[0]           |               13 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/registers_reg[3][0][0]                                 | pipe/memory_access/data_memory/SR[0]           |               15 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/registers_reg[9][0][0]                                 | pipe/memory_access/data_memory/SR[0]           |               19 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/registers_reg[8][0][0]                                 | pipe/memory_access/data_memory/SR[0]           |               14 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/registers_reg[7][0][0]                                 | pipe/memory_access/data_memory/SR[0]           |               18 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/registers_reg[6][0][0]                                 | pipe/memory_access/data_memory/SR[0]           |               17 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/registers_reg[4][0][0]                                 | pipe/memory_access/data_memory/SR[0]           |               13 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_mem_wb/E[0]                                                   | pipe/memory_access/data_memory/SR[0]           |               12 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/E[0]                                                   | pipe/memory_access/data_memory/SR[0]           |                9 |             64 |
+| ~clk_IBUF_BUFG                          | pipe/instruction_fetch/instruction_memory/instructions[11][31]_i_1_n_0 |                                                |                7 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[10][0][0]                                      | pipe/memory_access/data_memory/SR[0]           |               12 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[11][0][0]                                      | pipe/memory_access/data_memory/SR[0]           |                9 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[19][0][0]                                      | pipe/memory_access/data_memory/SR[0]           |               12 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[1][0][0]                                       | pipe/memory_access/data_memory/SR[0]           |               13 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[27][0][0]                                      | pipe/memory_access/data_memory/SR[0]           |               12 |             64 |
+|  clk_IBUF_BUFG                          | pipe/reg_ex_mem/ram_reg[15][0][0]                                      | pipe/memory_access/data_memory/SR[0]           |                9 |             64 |
+| ~clk_IBUF_BUFG                          | pipe/instruction_fetch/instruction_memory/instructions[1][31]_i_1_n_0  |                                                |               10 |             64 |
+| ~clk_IBUF_BUFG                          | pipe/instruction_fetch/instruction_memory/instructions[4][31]_i_1_n_0  |                                                |               15 |             64 |
+| ~clk_IBUF_BUFG                          | pipe/instruction_fetch/instruction_memory/instructions[5][31]_i_1_n_0  |                                                |               10 |             64 |
+| ~clk_IBUF_BUFG                          | pipe/instruction_fetch/instruction_memory/instructions[7][31]_i_1_n_0  |                                                |               14 |             64 |
+| ~clk_IBUF_BUFG                          | pipe/instruction_fetch/instruction_memory/instructions[0][31]_i_1_n_0  |                                                |               11 |             64 |
+| ~clk_IBUF_BUFG                          | pipe/instruction_fetch/instruction_memory/instructions[8][31]_i_1_n_0  |                                                |               18 |             64 |
+| ~clk_IBUF_BUFG                          | uart/interface/E[0]                                                    |                                                |               13 |             64 |
+| ~clk_IBUF_BUFG                          | pipe/instruction_fetch/instruction_memory/instructions[12][31]_i_1_n_0 |                                                |               12 |             64 |
+| ~clk_IBUF_BUFG                          | pipe/instruction_fetch/instruction_memory/instructions[10][31]_i_1_n_0 |                                                |               12 |             64 |
+| ~clk_IBUF_BUFG                          | pipe/instruction_fetch/instruction_memory/instructions[9][31]_i_1_n_0  |                                                |               18 |             64 |
+| ~clk_IBUF_BUFG                          | pipe/instruction_fetch/instruction_memory/instructions[13][31]_i_1_n_0 |                                                |                9 |             64 |
+| ~clk_IBUF_BUFG                          | pipe/instruction_fetch/instruction_memory/instructions[3][31]_i_1_n_0  |                                                |               10 |             64 |
+| ~clk_IBUF_BUFG                          | pipe/instruction_fetch/instruction_memory/instructions[6][31]_i_1_n_0  |                                                |               14 |             64 |
+| ~clk_IBUF_BUFG                          | pipe/instruction_fetch/instruction_memory/instructions[15][31]_i_1_n_0 |                                                |                8 |             64 |
+| ~clk_IBUF_BUFG                          | pipe/instruction_fetch/instruction_memory/instructions[2][31]_i_1_n_0  |                                                |               14 |             64 |
+| ~clk_IBUF_BUFG                          | pipe/instruction_fetch/instruction_memory/instructions[14][31]_i_1_n_0 |                                                |               11 |             64 |
+| ~clk_IBUF_BUFG                          | pipe/instruction_fetch/instruction_memory/instruction_temp_reg[31]_0   |                                                |               10 |             64 |
+| ~clk_IBUF_BUFG                          | uart/interface/counter_reg[0]_0                                        | uart/interface/counter_reg[0]                  |                8 |             64 |
+|  clk_IBUF_BUFG                          | uart/interface/out_instruction_reg[22]_rep                             | pipe/reg_id_ex/out_instruction_reg[0]          |               16 |             72 |
+|  clk_IBUF_BUFG                          | uart/interface/byteN_reg[31]_i_1_n_0                                   | pipe/memory_access/data_memory/SR[0]           |               16 |             82 |
+|  clk_IBUF_BUFG                          |                                                                        | pipe/memory_access/data_memory/SR[0]           |               30 |            112 |
+| ~clk_IBUF_BUFG                          | uart/interface/out_MemtoReg_reg                                        |                                                |               24 |            128 |
+|  clk_IBUF_BUFG                          | uart/interface/out_MemtoReg_reg                                        | pipe/reg_id_ex/out_regs_read_data1[31]_i_1_n_0 |               59 |            280 |
+|  clk_IBUF_BUFG                          | uart/interface/out_MemtoReg_reg                                        | pipe/memory_access/data_memory/SR[0]           |               68 |            302 |
+|  interface/datos                        |                                                                        |                                                |             1194 |           6560 |
++-----------------------------------------+------------------------------------------------------------------------+------------------------------------------------+------------------+----------------+
+
+
